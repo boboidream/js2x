@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # coding: utf-8
 # author: boboidream <z644381492@gmail.com>
-# version: 0.0.2
+# version: 0.0.6
 # date: 2017-12-17
 
 import os
@@ -64,7 +64,7 @@ class JianShu(object):
         # get Date
         article_date_node = article[0].xpath('//span[@class="publish-time"]')
         article_date_str = article_date_node[0].text
-        timeArray = time.strptime(article_date_str, '%Y.%m.%d %H:%M*')
+        timeArray = time.strptime(article_date_str[0:15], '%Y.%m.%d %H:%M')
         article_date = time.strftime('%Y-%m-%d %H:%M:00', timeArray)
 
         # deal images
@@ -92,7 +92,7 @@ class JianShu(object):
         }
 
     def download_post(self, title, date, content):
-        post_head = '---\ntitle: %s\ndate: %scategories:\ntags:\n\n---\n' % (title, date)
+        post_head = '---\ntitle: %s\ndate: %s\ncategories:\ntags:\n\n---\n' % (title, date)
         post = post_head + content
         post_title = date[0:10] + '-' + title
         post_dir = os.path.join(self.download_path, post_title)
@@ -125,7 +125,7 @@ class JianShu(object):
 # get argument
 def command_parse():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.0.2')    
+    parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.0.6')    
     parser.add_argument('url', help="url of JianShu Article")
     parser.add_argument('-o', '--output', help="download path. Default: Desktop")
     parser.add_argument('-p', '--prefix', default="./img/", help="set prefix for image")

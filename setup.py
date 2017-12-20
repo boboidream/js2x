@@ -3,9 +3,9 @@ from setuptools import setup
 
 setup(
     name='js2x',
-    version='0.0.2',
+    version='0.0.6',
     description='Download JianShu article as markdown file.',
-    url='',
+    url='https://github.com/boboidream/js2x',
     author='boboidream',
     author_email='z644381492@gmail.com',
     license='MIT',
