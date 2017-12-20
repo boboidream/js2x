@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: js2x
+Version: 0.0.2
+Summary: Download JianShu article as markdown file.
+Home-page: UNKNOWN
+Author: boboidream
+Author-email: z644381492@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: jianshu hexo markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
