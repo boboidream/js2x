@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 # coding: utf-8
 # author: boboidream <z644381492@gmail.com>
-# version: 0.0.6
-# date: 2017-12-17
+# version: 0.0.7
+# date: 2018-05-14
 
 import os
 import platform
@@ -43,7 +43,9 @@ class JianShu(object):
             times += 1
             print 'request %s, times: %d' % (url, times)
             try:
-                response = urllib2.urlopen(url)
+                req = urllib2.Request(url)
+                req.add_header('User-agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5')
+                response = urllib2.urlopen(req)
                 self.request_content = response.read().decode('utf-8', 'ignore')
             except Exception, e:
                 print e

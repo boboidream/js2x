@@ -36,5 +36,5 @@
 
 ## 最后
 
-项目地址：https://github.com/boboidream/js2x
-反馈地址：https://github.com/boboidream/js2x/issues
+- 项目地址：https://github.com/boboidream/js2x
+- 反馈地址：https://github.com/boboidream/js2x/issues
