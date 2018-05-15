@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='js2x',
-    version='0.0.7',
+    version='0.0.8',
     description='Download JianShu article as markdown file.',
     url='https://github.com/boboidream/js2x',
     author='boboidream',

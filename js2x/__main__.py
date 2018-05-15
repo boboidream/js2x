@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 # coding: utf-8
 # author: boboidream <z644381492@gmail.com>
-# version: 0.0.7
-# date: 2018-05-14
+# version: 0.0.8
+# date: 2018-05-15
 
 import os
 import platform
@@ -82,9 +82,11 @@ class JianShu(object):
             images_array.append({'url': url + url_suffix, 'name': img_name})
 
         # get Content
+        text_maker = html2text.HTML2Text()
+        text_maker.body_width = 0
         article_content_node = article[0].xpath('//div[@class="show-content"]')
         article_content_str = etree.tostring(article_content_node[0])
-        article_content = html2text.html2text(article_content_str)
+        article_content = text_maker.handle(article_content_str)
 
         return {
             'title': article_title,

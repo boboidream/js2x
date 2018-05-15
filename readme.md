@@ -38,3 +38,10 @@
 
 - 项目地址：https://github.com/boboidream/js2x
 - 反馈地址：https://github.com/boboidream/js2x/issues
+
+## 版本记录
+```
+2018.05.15 | 0.0.8 修复不正常断行问题
+2018.05.14 | 0.0.7 修复简书下载 403 问题
+2017.12.20 | 0.0.2 发布
+```
