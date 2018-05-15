@@ -1,5 +1,7 @@
 # js2x：简书 to Hexo 格式转换器。
 
+![preview](http://upload-images.jianshu.io/upload_images/1099569-3c0d6d9c5f583be3.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 下载「简书」文章内容及图片，并转换为 Hexo 博客可以直接解析的 Markdown 格式。使「简书」文章快捷同步到自己 Hexo 博客。
 
 ## 开发初衷
